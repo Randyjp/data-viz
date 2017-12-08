@@ -1,6 +1,6 @@
 console:
   build: .
-  command: python scatter_squares.py
+  command: python rw_visual.py
 #  ports:
 #   - "5000:5000"
   environment:
@@ -8,3 +8,5 @@ console:
   volumes:
    - .:/src
    - /tmp/.X11-unix:/tmp/.X11-unix
+#  stdin_open: true
+#  tty: true
